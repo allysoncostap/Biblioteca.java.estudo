@@ -1,0 +1,21 @@
+package fundamentos;
+
+
+// 
+public class Atribuição {
+	public static void main(String[] args) {
+		int a = 3;// declarando variável + atribuindo valor 
+		int b = a;// declarando variável + atribuindo valor 
+		int c = a + b;// declarando variável + atribuindo valor 
+		c += b; // c = c + b ;//atribuindo soma = valor = valor + outro valor 
+		c -= a;// c = c - a ;//atribuindo subtração = valor = valor - outro valor 
+		c *= b;// c = c * b ;//atribuindo multiplicação = valor = valor * outro valor 
+		c /= a;// c = c / a ;//atribuindo divisão = valor = valor / outro valor 
+
+		System.out.println(c);//mostrando na tela
+
+		c %= 2;// c = c %2 ; 0 ou 1 , se for zero é par se for ímpar é 1
+		System.out.println(c);// mostrando na tela 
+	}
+}
+

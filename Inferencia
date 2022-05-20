@@ -1,0 +1,30 @@
+package fundamentos;
+
+public class Inferencia {//
+	public static void main(String[] args ){//
+		 double a = 4.5; // declaração e inicialização//
+		  System.out.println(a);//mostrando na tela 
+		  a = 12;//atruindo valor na variavel 
+		   System.out.println(a);//mostrando na tela 
+		   //a = "...";//
+		   var b= 4.5;//declarando variavel pelo tipo 
+		    System.out.println(b);//
+		var c = "Texto";//declando variavel pelo tipo 
+		System.out.println(c);//mostrando na tela 
+		  c = "Ourtro texto";//atribuindo valor na variavel
+		   System.out.println(c);//mostrando na tela 
+		   
+		   // c = 4.5;//
+		    double d ; // variavel foi declarada
+		d = 123.65; // variavel foi inicializada
+		System.out.println(d);// mostrando na tela // usada"
+		var e = 123.45;//declarando a variavel pelo tipo 
+		 System.out.println(e);//mostrando na tela 
+		 
+		 var f = 12;// declarando variavel pelo tipo  // inteiro//
+		 //f = 12.01////
+		    System.out.println(f);//mostrando na tela 
+		   
+		 }
+
+}

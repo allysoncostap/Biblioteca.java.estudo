@@ -1,0 +1,18 @@
+package fundamentos;
+
+public class PrimitivoVsObjeto {//iniciando 
+
+		   public static void main(String[] args ){//iniciando 
+
+		   String s = new String("texto");//criando objeto do tipo string 
+		   s.toUpperCase();//método de aumentar a letra
+		   
+		   //Wrappers são versão objeto dos tipos primitivos
+		   int a = 123;//declarando variável
+		     System.out.println(a);//mostrando na tela 
+		   
+		   
+		   
+		 }
+}
+

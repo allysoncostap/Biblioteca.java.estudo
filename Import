@@ -1,0 +1,22 @@
+package fundamentos;
+
+import java.util.Date;
+
+public class Import {//objeto 
+
+	
+	public static void main(String[] args ){//iniciando 
+
+		java.lang.String b = "boa tarde !";// declarando variavel de forma completa 
+		java.lang.System.out.println(b);//metodo de mostrar na tela completo 
+		String s = "Bom dia!";//declarando variavel 
+		System.out.println(s);//mostrando na tela
+		Date d = new Date();//criando um objeto
+		System.out.println(d);//mostrando na tela 
+		// JButton botao = new JButton();//
+		 
+		 
+		 }
+	
+}
+

@@ -1,0 +1,30 @@
+package fundamentos;
+
+public class Aritmeticos {// objeto
+	public static void main(String[] args) {// início do programa
+
+		System.out.println(2 + 3);// mostrando na tela + soma
+		var x = 34.56;// declaração de variável usando o var, onde se define o tipo pela inicialização
+		double y = 2.2;// declarando variável
+
+		System.out.println(x + y);// mostrando na tela + soma
+		System.out.println(x - y);// mostrando na tela + subtração
+		System.out.println(x * y);// mostrando na tela + multiplicação
+		System.out.println(x / y);// mostrando na tela + divisão
+
+		int a = 8;// declaração de variável
+		int b = 3;// declaração de variável
+		System.out.println(a + b);// mostrando na tela + soma
+		System.out.println(a - b);// mostrando na tela+ subtração
+		System.out.println(a * b);// mostrando na tela + multiplicação
+		System.out.println(a / b);// mostrando na tela + divisão
+		System.out.println(a / (double) b);// mostrando na tela+ cast + divisão
+		System.out.println(a / (float) b);// mostrando na tela+ cast + divisão
+		System.out.println(a % b);// mostrando na tela+ resto
+		System.out.println(8 % 3);// mostrando na tela+ resto
+
+		System.out.println(x + y - a * b);// mostrando na tela+ calculo
+
+	}
+}
+

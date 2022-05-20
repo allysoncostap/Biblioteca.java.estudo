@@ -1,0 +1,16 @@
+package fundamentos;
+
+public class PrimeiroPrograma {//objeto
+	public static void main(String[] args ){//iniciando 
+		 
+		 // Uma sentença de codigo  termina com ;//
+		 System.out.println("PrimeiroPrograma Parte 02");//mostrando na tela 
+		  System.out.println("PrimeiroPrograma Parte 01");//mostrando na tela 
+		 
+		  /*/
+		   *Comentario
+		   */
+		  System.out.println("Fim ");//mostrando na tela 
+
+}
+}

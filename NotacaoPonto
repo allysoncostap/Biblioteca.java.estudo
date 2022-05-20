@@ -1,0 +1,25 @@
+package fundamentos;
+
+public class NotacaoPonto {//objeto 
+	public static void main(String[] args ){//iniciando 
+		String s = "Bom dia x";//declaração de variável 
+		s = s.replace("X","Senhora");//atribuindo valor + função trocar palavra
+		s = s.toUpperCase();//atribuindo + método de aumentar a letra 
+		s = s.concat("!!!");//atribuindo + método de concatenar (juntar)
+		 System.out.println(s);//mostrando na tela 
+		 String x = "Leo".toUpperCase();//atribuindo + método de aumentar a letra
+		  System.out.println(x);//mostrando na tela 
+		 
+		  String y = "bom dia X".replace("X","Gui").toUpperCase().concat("!!!");//atribuindo valor + método de trocar 
+		  //+ método de aumentar a letra + método de concatenar 
+		  System.out.println(y);//mostrando na tela 
+		 
+		 
+		 //Tipos primitivos não tem o operador "."//
+		 int a = 3;//declaração de variável
+		 System.out.println(a);//mostrando na tela 
+		 
+		 
+		 }
+}
+

@@ -1,0 +1,30 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioFundamentos {// criação de objeto
+	
+	
+	public static void main(String[] args) {// iniciando 
+		
+		Scanner entrada = new Scanner(System.in) ;// novo objeto
+			System.out.println("Digite o primeiro salario : ");// mostrando na tela
+			String s1 = entrada.next();//salvando texto em variavel 
+			System.out.println("Digite o segundo salario : ");// mostrando na tela
+			String s2 = entrada.next();//salvando texto em variavel 
+			System.out.println("Digite o terceiro salario : ");//mostrando na tela
+			String s3= entrada.next();//salvando texto em variavel 
+			
+			
+			double d1= Double.parseDouble(s1.replace(',','.')) ; // passando valor para double + trocando , por .
+			double d2= Double.parseDouble(s2.replace(',','.')) ;//passando valor para double + trocando , por .
+			double d3= Double.parseDouble(s3.replace(',','.')) ;//passando valor para double + trocando , por .
+			
+			
+	 double media = d1+ d2+d3/3;// calculando media 
+		System.out.println(media);// mostrando na tela 
+		entrada.close();//fechando scanner 
+	}
+
+}
+

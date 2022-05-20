@@ -1,0 +1,40 @@
+package fundamentos;
+
+public class Logicos {
+	@SuppressWarnings("unused")
+	public static void main(String[] args) {
+		boolean condicao1 = true;//variável BOOLEAN ( VERDADEIRO OU FALSO) variável verdadeira 
+		boolean condicao2 = 3 > 7;//boolean + condição 
+
+		System.out.println(condicao1 && !condicao2);// mostrando na tela + condição E (and) + negação 
+		System.out.println(condicao1 || condicao2);//mostrando na tela + condição OU ( or)
+		System.out.println(condicao1 ^ condicao2);// mostrando na tela + condição OU exclusivo (xor)
+		System.out.println(!!condicao1);// condição 2x negada 
+		System.out.println(!condicao2);//condição negada
+
+		System.out.println("Tabela verdade E (And)");//
+		System.out.println(true && true);// mostrando na tela condição E
+		System.out.println(true && false);//mostrando na tela condição E
+		System.out.println(false && true);//mostrando na tela condição E
+		System.out.println(false && false);//mostrando na tela condição E
+
+		System.out.println("Tabela verdade OU (or)");//
+		System.out.println(true || true);//mostrando na tela condição OU
+		System.out.println(true || false);//mostrando na tela condição OU
+		System.out.println(false || true);//mostrando na tela condição OU
+		System.out.println(false || false);//mostrando na tela condição OU
+
+		System.out.println("Tabela verdade OU  Exclusivo(xor)");//
+		System.out.println(true ^ true);//mostrando na tela condição OU exclusivo 
+		System.out.println(true ^ false);//mostrando na tela condição OU exclusivo 
+		System.out.println(false ^ true);//mostrando na tela condição OU exclusivo 
+		System.out.println(false ^ false);//mostrando na tela condição OU exclusivo 
+
+		System.out.println("Tabela verdade NOT");//
+		System.out.println(!true);//mostrando na tela + condição de negação 
+
+		System.out.println(!false);//mostrando na tela + condição de negação 
+
+	}
+}
+

@@ -1,0 +1,25 @@
+package fundamentos;
+
+public class Ternario {// objeto 
+	public static void main(String[] args) {//iniciando 
+
+		//Ternarios =  condição ? verdadeira : false ;  
+		
+		
+		
+		
+		double media = 7.6;//declaração de variável 
+		String resultadoFinal = media >= 7.0 ? "Aprovado." : "em recuperação";// atribuição + ternário 
+		System.out.println("O aluno está" + resultadoFinal);//mostrando na tela 
+
+		double nota = 9.9;//declaração de variavel
+		boolean bomComportamento = false;// boolean false
+		boolean passouPorMedia = nota >= 7;//boolean + condição maior ou igual 
+		boolean temDesconto = bomComportamento && passouPorMedia;// booelan + condição E 
+		String resultado = temDesconto ? "Sim." : "Não.";// atribuição + ternário 
+
+		System.out.printf("Tem desconto? %s", resultado);//mostrando na tela 
+
+	}
+}
+

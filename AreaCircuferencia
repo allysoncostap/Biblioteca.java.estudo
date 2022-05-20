@@ -1,0 +1,23 @@
+package fundamentos;
+
+public class AreaCircuferencia {
+	
+	
+	
+	 public static void main(String[] args ){
+		 double raio = 3.4;//declaração de variável
+		 final double PI = 3.14159;// declaração de variável constante 
+		 
+		 double area = PI * raio * raio;// declaração de variável 
+		 
+		 System.out.println(area);//mostrando na tela
+		 raio = 10 ;//atribuindo valor 
+		 area = PI * raio *raio ;//atribuindo valor 
+		 
+		  System.out.println("Area = " + area + "m2.");//mostrando na tela 
+		 
+		  }
+		  
+
+}
+

@@ -1,0 +1,12 @@
+package fundamentos;
+
+public class DesafioAritmeticos {
+	public static void main(String[] args) {//inicio  
+		int a = 3 * 4 - 10;//declaração de variavel com uma formula
+		int b = (int) Math.pow(a, 3); // cast + método de potencialização
+		int c = (int) Math.pow(a, 3);//cast + método de potencialização
+		System.out.println(b);//mostrando na tela
+		System.out.println(c);//mostrando na tela 
+	}
+}
+

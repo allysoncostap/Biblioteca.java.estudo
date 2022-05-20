@@ -1,0 +1,21 @@
+package fundamentos;
+
+import java.util.Scanner;// biblioteca
+
+public class TipoStringEquals {//objeto 
+	public static void main(String[] args) {//iniciando 
+		System.out.println("2" == "2");// mostrando na tela + 
+
+		String s1 = new String("2");//criando string com valor 2
+		System.out.println("2" == s1);//mostrando na tela + condição de igual
+		System.out.println("2".equals(s1));//mostrando na tela + equals
+
+		Scanner entrada = new Scanner(System.in);// criando um objeto tipo scanner 
+
+		String s2 = entrada.next();//atribuindo valor + get
+		System.out.println("2" == s2.trim());// metodo de tirar os espaços
+		System.out.println("2".equals(s2.trim()));// mostrando na tela+ equals + metodo tirando os espaços 
+		entrada.close();//fechando scanner
+
+	}
+}

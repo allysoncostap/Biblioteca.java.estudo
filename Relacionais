@@ -1,0 +1,24 @@
+package fundamentos;
+
+public class Relacionais {// objeto
+	public static void main(String[] args) {//
+
+		int a = 97;//declaração de variável 
+		int b = 'a';// declaração de variável
+		System.out.println(a == b);//mostrando na tela + igual 
+
+		System.out.println(3 > 4);//mostrando na tela + maior/menor
+		System.out.println(3 >= 3);//mostrando na tela + maior ou igual 
+		System.out.println(3 < 7);//mostrando na tela + menor/ maior
+		System.out.println(30 <= 7);//mostrando na tela + menor ou igual 
+		System.out.println(30 != 7);//mostrando na tela + diferente 
+
+		double nota = 9.9;//declaração de variável 
+		boolean bomComportamento = false;// variável boolean false 
+		boolean passouPorMedia = nota >= 7;// boolean + condição de maior ou igual 
+		boolean temDesconto = bomComportamento && passouPorMedia;//boolean + condição E
+		System.out.println("Tem desconto? " + temDesconto);//mostrando na tela 
+
+	}
+}
+

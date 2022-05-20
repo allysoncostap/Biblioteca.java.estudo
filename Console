@@ -1,0 +1,27 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class Console {
+
+	public static void main(String[] args ){
+		System.out.println("Bom");//mostrando na tela 
+		System.out.println("dia\n\n");//mostrando na tela + pulando linha
+
+		System.out.println("Bom");//mostrando na tela 
+		System.out.println("dia!");//mostrando na tela 
+		 
+		System.out.printf("Megasena: %d %d %d %d %d %d",1,2,3,4,5,6);//mostrando na tela , usando a porcentagem
+		System.out.printf("Salario: %.1f%n",1234.5678 );//mostrando na tela + %.1f é usando para mostrar só uma casa decimal 
+		Scanner entrada = new Scanner(System.in);//criando um objeto tipo get (scanner)
+		System.out.print("Digite o seu nome");//mostrando na tela 
+		String nome = entrada.nextLine();//usando o método get e atribuindo em uma variável 
+		System.out.print("Digite o seu sobrenomenome");//mostrando na tela 
+		String sobrenome = entrada.nextLine();//usando o método get e atribuindo em uma variável 
+		 System.out.print("Digite o seu sobrenomenome");//mostrando na tela 
+		int idade = entrada.nextInt();//usando o método get e atribuindo em uma variável 
+
+		System.out.printf("%s %s tem %d anos.%n",nome, sobrenome, idade );//mostrando na tela valores 
+		 entrada.close();//fechando o método scanner 
+		 }}
+

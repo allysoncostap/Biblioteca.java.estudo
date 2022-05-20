@@ -1,0 +1,37 @@
+package fundamentos;
+
+public class TiposPrimitivos {// classe 
+
+	public static void main(String[] args) {// iniciando 
+		// informações do funcionários
+
+		// Tipos numericos interios//
+		byte anosDeEmpresa = 23;//declaração de variável 
+		short numeroDeVoos = 542;//declaração de variável
+		int id = 56789;//declaração de variavel
+		long pontosAcumulados = 3_134_845_223L;//declaração de variável
+
+		// Tipos numericos reais
+		float salario = 11_445.44F;//declaração de variável
+		double vendasAcumuladas = 2_991_797_103.01;//declaração de variável
+
+		// Tipos booleano
+		boolean estaDeFerias = false; // true//declaração de variável
+
+		// Tipos caractere
+		char status = 'A'; // ativo//declaração de variavel
+
+		// Dias de empresa
+		System.out.println(anosDeEmpresa * 365);//mostrando na tela + calculo 
+
+		// Números de viagens
+		System.out.println(numeroDeVoos / 2);//mostrando na tela + calculo 
+		// Pontos por real
+		System.out.println(pontosAcumulados / vendasAcumuladas);//mostrando na tela + calculo 
+
+		System.out.println(id + ": ganha ->" + salario);//mostrando na tela + calculo 
+		System.out.println("ferias?" + estaDeFerias);//mostrando na tela 
+		System.out.println("Status: " + status);//mostrando na tela 
+	}
+}
+

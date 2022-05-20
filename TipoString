@@ -1,0 +1,40 @@
+package fundamentos;
+
+public class TipoString {//objeto
+
+	// String é um objeto imutável
+	public static void main(String[] args) {//iniciando 
+		System.out.println("olá pessoal ".charAt(2));//mostrando na tela + função de ver a letra na posição
+
+		String s = "Boa tarde";// declarando variável
+		System.out.println(s.concat("!!!"));//mostrando na tela + concatenando
+		System.out.println(s + "!!!");//mostrando na tela + concatenando
+		System.out.println(s.startsWith("Boa"));//mostrando na tela  + função de começa com a palavra
+		System.out.println(s.toLowerCase().startsWith("boa"));//mostrando na tela + função de aumentar a letra + função se a frase começa com a palavra
+		System.out.println(s.toLowerCase().startsWith("TARDE"));//mostrando na tela + função de aumentar a letra + função se a frase começa com a palavra
+		System.out.println(s.length());//mostrando na tela + quantas letra a frase tem 
+		System.out.println(s.toLowerCase().equals("boa tarde"));//mostrando na tela + função para aumentar letra + equals
+		System.out.println(s.equalsIgnoreCase("boa"));//mostrando na tela + função de ignorar letra maiúscula/minúscula
+
+		var nome = "Pedro";//declarando variável com o tipo
+		var sobrenome = "Santos";//declarando variável com o tipo
+		var idade = 33;//declarando variável com o tipo
+		var salario = 12345.987;//declarando variável com o tipo
+
+		String maisUmaFrase = "Nome: " + nome + "\nSobrenome: " + sobrenome + "\nidade:" + idade + "\nSalario: "
+				+ salario + "\n\n";//mostrando na tela 
+
+		System.out.println(maisUmaFrase);//mostrando na tela 
+		System.out.printf("\nO senhor %s %s tem %d anos e ganha %.2f.", nome, sobrenome, idade, salario);//mostrando na tela 
+
+		String frase = String.format("O senhor %s %s tem %d anos e ganha %.2f.", nome, sobrenome, idade, salario);//mostrando na tela 
+		System.out.println(frase);//mostrando na tela 
+
+		System.out.println("Frase qualquer".contains("qual"));//mostrando na tela + se contem a palavra
+		System.out.println("Frase qualquer".indexOf("qual"));//mostrando na tela + qual a posição que se contra 
+		System.out.println("Frase qualquer".substring(6));//mostrando na tela + função iniciando a frase a parti da posição 
+		System.out.println("Frase qualquer".substring(6, 10));//mostrando na tela + função iniciando a frase a parti da entre a posição
+	}
+
+}
+
