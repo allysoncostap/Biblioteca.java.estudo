@@ -3,22 +3,23 @@ package fundamentos;
 public class Unarios {
 	public static void main(String[] args ){
 		   
-		   int a = 1;//declarando variavel 
-		   int b = 2;//declarando variavel
+		   int a = 1;//declarando variável 
+		   int b = 2;//declarando variável
 		   
 		   
-		   a++; // a = a +1//agrementando +1
-		   a-- ;//a = a  - 1// degrementando -1
-		   ++b;//b =b +1;//agrementrando com prioriedade 
-		   --b;//b = b - 1;//degrementrando com prioriedade
+		   a++; // a = a +1//acrescentando +1
+		   a-- ;//a = a  - 1// subtraindo -1
+		   ++b;//b =b +1;// acrescentando com prioridade 
+		   --b;//b = b - 1;// subtraindo o com prioridade
 
 		System.out.println(a);///mostrando na tela 
 		System.out.println(b);///mostrando na tela 
 
 		System.out.println("Mini Desafio... ");///mostrando na tela 
-		System.out.println(++a == b--);///mostrando na tela + condiçoes 
-		System.out.println(a);///mostrando na tela
+		System.out.println(++a == b--);///mostrando na tela + condições 
+		System.out.println(a);///mostrando na tela 
 		System.out.println(b);//mostrando na tela 
 
 }
 }
+
