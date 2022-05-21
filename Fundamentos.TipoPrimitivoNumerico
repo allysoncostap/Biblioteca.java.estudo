@@ -1,0 +1,21 @@
+package fundamentos;
+
+public class ConversaoTipoPrimitivoNumerico {//objeto
+	public static void main(String[] args) {// inicio
+
+		double a = 1; //declaração de variave  // implícita
+		System.out.println(a);//mostrando na tela 
+
+		float b = (float) 1.123545646545; // explicita (cast)
+		System.out.println(b);//mostrando na tela 
+		int c = 340;// declaração de variável 
+		byte d = (byte) c;//declaração de variável + cast // explicita (Cast)
+		System.out.println(d);//mostrando na tela 
+		double e = 1.999999;//declaração de variável 
+		int f = (int) e; // declaração de variável + cast // explicita (Cast)
+		System.out.println(f);//mostrando na tela 
+
+	}
+
+}
+
