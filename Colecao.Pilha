@@ -1,0 +1,38 @@
+package colecao;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class Pilha {
+	public static void main(String[] args){//
+		//Offer e add -> adiciona elementos na fila
+		Deque<String> livros = new ArrayDeque<>();//
+		livros.add("O pequeno Principe");// adicionando na pilha, false, true
+		livros.push("Don Quixote"); //adicionando na pilha, erro de capacidade (tamanho)
+		livros.push("O Hobbit "); //adicionando na pilha, erro de capacidade (tamanho)
+
+		// Peek e element  = obter o próximo elementos da fila sem remover
+		System.out.println(livros.peek());//próximo sem remove , null
+		System.out.println(livros.element());//próximo sem remove , erro
+
+		System.out.println(livros.pop());//removendo da pilha, erro
+		System.out.println(livros.poll());//removendo da pilha, null
+		System.out.println(livros.poll());//removendo da pilha
+		System.out.println(livros.poll());//removendo da pilha
+		System.out.println(livros.poll());//removendo da pilha
+		System.out.println(livros.poll());//removendo da pilha
+		//System.out.println(livros.remove());// removendo da pilha , erro
+
+
+
+		// livros.size(); //tamanho da fila
+		// livros.clear(); //limpando a fila
+		// livros.isEmpty(); //verificar se fila está vazia
+		//livros.contains();// verificar se possui dentro da fila
+		}
+
+
+
+		}
+
+

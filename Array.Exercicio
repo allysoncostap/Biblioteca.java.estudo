@@ -1,0 +1,40 @@
+package arrays;
+
+import java.util.Arrays;//biblioteca
+
+public class Exercicio {//objeto 
+	public static void main (String[] args){//iniciando programa 
+
+
+		double [] notasAlunoA = new double[4];//array tipo double 
+		System.out.println(Arrays.toString(notasAlunoA));//mostrando na tela + método para transforma o array em String
+		notasAlunoA[0]= 7.9;//adicionando no array 
+		notasAlunoA[1]= 8;//adicionando no array 
+		notasAlunoA[2]= 6.7;//adicionando no array 
+		notasAlunoA[3]= 9.7;//adicionando no array 
+
+		System.out.println(Arrays.toString(notasAlunoA));///mostrando na tela + método para transforma o array em String
+		System.out.println(notasAlunoA[0]);//mostrando na tela 
+		System.out.println(notasAlunoA[notasAlunoA.length - 1 ]);//mostrando a tela o ULTIMO DO ARRAY
+		//System.out.println(notasAlunoA[4]); erro
+
+		double totalAlunoA= 0;//declarando variável 
+		for(int i = 0; i< notasAlunoA.length; i++){//for 
+		totalAlunoA +=notasAlunoA[i];//atribuição valor 
+		}
+
+
+		System.out.println( totalAlunoA / notasAlunoA.length);//mostrando na tela + resultado de calculo 
+
+		final double notaArmazenada = 5.9;// declarando variável constante + atribuindo valor 
+		double[] notasAlunoB= {6.9 , 8.9, notaArmazenada, 10};//array + parâmetros 
+		double totalAlunoB = 0;//declarando variável 
+		for(int i =0 ; i < notasAlunoB.length; i++){//for 
+		totalAlunoB += notasAlunoB[i];//atribuição 
+
+		}
+		System.out.println(totalAlunoB/ notasAlunoB.length);//mostrando na tela + resultado de calculo 
+		}
+
+}
+

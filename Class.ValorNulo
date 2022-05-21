@@ -1,0 +1,23 @@
+package classe;
+
+public class ValorNulo {//objeto 
+	public static void main(String[] args){//iniciando 
+		 
+		 String s1= "";//declarando uma variável em BRANCO
+		 System.out.println(s1.concat("!!!!"));//mostrar na tela 
+		 Data d1 = Math.random() > 0.5 ? new Data() : null;//atribuindo valor + método random + ternário 
+		 if(d1 != null){//funçã if ( boolean) + condição diferente 
+		 d1.mes = 3 ;// atribuindo valor 
+		 System.out.println(d1.obterDataFormatada());//mostrando na tela + metodo
+		  }
+		 String s2 = Math.random() > 0.5 ? "opa" : null;//atribuindo valor + método random + ternário
+		 if (s2 != null){//função if (boolean)
+		 System.out.println(s2.concat("???"));//mostrando na tela 
+		 
+		 }
+		 
+		 
+		 
+		 }
+}
+

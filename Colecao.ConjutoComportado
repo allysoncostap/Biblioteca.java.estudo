@@ -1,0 +1,36 @@
+package colecao;
+
+import java.util.HashSet;//biblioteca
+import java.util.Set;//biblioteca
+import java.util.SortedSet;//biblioteca
+import java.util.TreeSet;//biblioteca
+
+public class ConjutoComportado {//objeto 
+public static void main(String[] args) {//iniciando programa 
+	
+	//Set<String> listaAprovado= new HashSet<>();//
+	SortedSet<String> listaAprovados = new TreeSet<>();// novo conjunto 
+	listaAprovados.add("Ana");// add conjunto 
+	listaAprovados.add("Carlos");//add conjunto 
+	listaAprovados.add("Lucas");//add conjunto 
+	listaAprovados.add("Pedro");//add conjunto 
+	
+	
+	for(String candidato:listaAprovados) {//foreach
+		
+		System.out.println(candidato);//mostrando na tela 
+		
+	}
+	Set<Integer> nums = new HashSet<>();//
+	nums.add(1);//add conjunto 
+	nums.add(2);//add conjunto 
+	nums.add(120);//add conjunto 
+	nums.add(6);//add conjunto 
+	
+	for(int n : nums) {// foreach 
+		System.out.println(n);//mostrando na tela 
+		
+	}
+}
+}
+

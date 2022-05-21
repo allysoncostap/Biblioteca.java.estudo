@@ -1,0 +1,35 @@
+package classe;
+
+public class Usuario {
+
+	String nome;// declarando variável
+	String email;//declarando variável
+
+	public boolean equals(Object objeto){// Definindo o equals
+
+	//if(objeto instanceof Usuario){// instanceof é uma instância , se (if) objeto for
+	//uma instacia usuario ele ler o codigo  ... sempre tem que retorna algum valor
+	Usuario outro = (Usuario) objeto;//declarando e criando um cast do tipo usuário
+
+	 boolean nomeIgual= outro.nome.equals(this.nome);// declarando variável para salvar comparação
+	 
+	 boolean emailIgual= outro.nome.equals(this.email);//declarando variável para salvar comparação
+	 return nomeIgual && emailIgual;//critério para saber se o usuário é igual
+	 
+	}
+	// hascode será abordado em outra aula!//
+
+	//
+	public int hascode(){// função hascode
+
+
+	return 0;// retornando zero só para mostras EXMPLO
+
+	}
+
+
+
+
+
+	}
+

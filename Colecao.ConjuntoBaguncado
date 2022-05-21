@@ -1,0 +1,52 @@
+package colecao;
+
+import java.util.HashSet;//biblioteca
+import java.util.Set;//biblioteca
+
+public class ConjuntoBaguncado {//objeto
+
+	@SuppressWarnings({ "rawtypes", "unchecked" })//recurso utilizado para retirar notificação de  aviso 
+	public static void main(String[] args) {//iniciando programa 
+	
+
+
+			HashSet conjunto = new HashSet();//novo conjunto 
+			conjunto.add(1.2);//add conjunto 
+			conjunto.add(true);//add conjunto 
+			conjunto.add("Teste");//add conjunto 
+			conjunto.add(1);//add conjunto 
+			conjunto.add('x');//add conjunto 
+
+
+			System.out.println("Tamanho é " + conjunto.size());//mostrando na tela + metodo 
+			conjunto.add("Teste");//add conjunto 
+			conjunto.add('x');//add conjunto 
+
+			System.out.println("Tamanho é " + conjunto.size());//mostrando na tela 
+
+			System.out.println(conjunto.remove("teste"));//mostrando na tela 
+			System.out.println(conjunto.remove("Teste"));//mostrando na tela 
+			System.out.println(conjunto.remove('x'));//mostrando na tela 
+			System.out.println("Tamanho é " + conjunto.size());//mostrando na tela 
+
+			System.out.println(conjunto.contains('x'));//mostrando na tela 
+			System.out.println(conjunto.contains(1));//mostrando na tela 
+			System.out.println(conjunto.contains(true));//mostrando na tela 
+
+			Set nums = new HashSet();// novo conjunto 
+			nums.add(1);//add conjunto 
+			nums.add(2);//add conjunto 
+			nums.add(3);//add conjunto 
+
+			System.out.println(nums);//mostrando na tela 
+			System.out.println(conjunto);//mostrando na tela 
+			// conjunto.addAll(nums); União entre dois conjuntos
+			conjunto.retainAll(nums);//
+			System.out.println(conjunto);//mostrando na tela 
+			conjunto.clear();//
+			System.out.println(conjunto);//mostrando na tela 
+
+			}
+	}
+
+

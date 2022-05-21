@@ -1,0 +1,21 @@
+package classe;
+
+public class PrimeiroTrauma {// objeto
+	 int a = 3; // declarando variável
+	 
+	 public static void main(String[] args) {//iniciando
+		
+		 PrimeiroTrauma casa = new PrimeiroTrauma();//novo objeto 
+		 System.out.println(casa.a);//mostrando na tela 
+		 
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}
+

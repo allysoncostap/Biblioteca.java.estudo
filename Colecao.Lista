@@ -1,0 +1,44 @@
+package colecao;
+
+import java.util.ArrayList;
+
+
+
+
+
+public class Lista {
+	public static void main (String[] args){// iniciando
+		ArrayList <Usuario> lista = new ArrayList<>();//criando(Lista) , do tipo Usuário
+
+		Usuario u1 = new Usuario("ana");//Criando um objeto
+		lista.add(u1);//adicionando na lista
+		lista.add(new Usuario("Carlos"));//adicionando valores na lista  na lista
+		lista.add(new Usuario("Lia"));//adicionando valores na lista  na lista
+		lista.add(new Usuario("Bia"));//adicionando valores na lista  na lista
+		lista.add(new Usuario("Manu"));//adicionando valores na lista  na lista
+
+		System.out.println(lista.get(3));//mostrando na tela por indice
+		System.out.println(">>>>" + lista.remove(1));//mostrando na tela e removendo da lista por indice
+		System.out.println(lista.remove(new Usuario("Manu")));// mostrando na tela ,removendo da lista pelo nome
+
+
+
+		System.out.println("Tem? "+ lista.contains(new Usuario("Lia")));//mostrando na tela , função contains
+		System.out.println("Tem? "+ lista.contains(u1));//mostrando na tela , função contains
+
+		for(Usuario u : lista){//foreach, percorrendo a lista toda
+
+		System.out.println(u.nome);//mostrando na tela os nomes da lista
+
+
+
+		}
+
+
+
+
+
+
+		}
+}
+

@@ -1,0 +1,62 @@
+package colecao;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class Mapa {
+
+	public static void main(String[] args){//
+
+		// mapa é uma "matrix " com  2 colunas
+		// a primeira é key
+		// a segunda é Value
+
+
+		Map<Integer, String > usuarios = new HashMap<>();// criação de um mapa
+		 // o put coloca e substui
+
+		usuarios.put(1, "Robert");//put colocar no map ,
+		usuarios.put(20, "Ricardo ");//put colocar no map ,
+		usuarios.put(3, "Rafaela");//put colocar no map ,
+		usuarios.put(4, "Rebeca");//put colocar no map ,
+
+		System.out.println(usuarios.size());//mostrando na tela + método tamanho do map
+		System.out.println(usuarios.isEmpty());//mostrando na tela + função verificando se a map esta vazio
+
+
+
+		System.out.println(usuarios.keySet());//mostrando na tela  a coluna key
+		System.out.println(usuarios.values());//mostrando na tela a coluna values
+		System.out.println(usuarios.entrySet());//mostrando na tela as duas colunas
+
+
+
+		System.out.println(usuarios.containsKey(20));//mostrando na tela + função se CONTEM dentro do map
+		System.out.println(usuarios.containsValue("Rebeca"));//mostrando na tela + função se CONTEM dentro do map
+
+
+		System.out.println(usuarios.get(4));//mostrando na tela + função  obter o valor pelo indice
+		System.out.println(usuarios.remove(1));//mostrando na tela +  função removendo com indice
+		System.out.println(usuarios.size());//mostrando na tela + função tamanho do map
+
+
+		for(int chave: usuarios.keySet()){// foreach, percorrendo o map na coluna primaria(key)
+		System.out.println(chave);//mostrando coluna primaria 
+
+		}
+
+
+		for(String valor: usuarios.values()){//foreach, percorrendo o map na coluna segundaria(valaes)
+		System.out.println(valor);//mostrando coluna values
+
+		}
+		for(Entry<Integer, String> registro: usuarios.entrySet()) {// foreach percorrendo map nas 2 colunas 
+			System.out.println(registro.getKey()+ "==>");// mostrando na tela + primeira coluna 
+			System.out.println(registro.getValue());// mostrando na tela  coluna segundaria 
+			
+			
+		}
+	}}
+
+

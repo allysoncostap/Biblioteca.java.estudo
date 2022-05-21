@@ -1,0 +1,31 @@
+package classe;
+
+public class Produto {//objeto
+String nome ;//declarando variável
+double preco;//declarando variável
+ static int desconto =25 ; //declarando variável
+
+Produto(){//construtor padrão
+	
+}
+ Produto( String nomeInicial, double precoInicial, double descontoInicial){// construtor
+	 nome= nomeInicial;//referenciando valor 
+	 preco = precoInicial;//referenciando valor
+ 
+ }
+
+
+//double precoComDesconto() {//método sem parâmetros 
+	//return preco *(1-desconto);// retornar resultado de operação
+	
+	
+//}
+//double precoComDesconto(double descontoDoGerente) {// método com parâmetros 
+	//return preco *(1-desconto+ descontoDoGerente);// retorna resultado de operação
+	///
+	
+//}
+
+
+}
+

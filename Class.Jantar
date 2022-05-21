@@ -1,0 +1,24 @@
+package classe;
+
+public class Jantar {//objeto
+
+	public static void main(String[] args) {//iniciando
+		 Pessoa a = new Pessoa();// novo objeto
+		 a.nome = "allyso ";//atribuindo valor no atributo do objeto 
+		 a.peso = 85;//atribuindo valor no atributo do objeto 
+		 
+		 Comida b = new Comida();//novo objeto
+		 b.nome ="Arroz";//atribuindo valor no atributo do objeto 
+		 b.peso= 10;//atribuindo valor no atributo do objeto 
+		
+		 Comida c = new Comida("Feijão", 100 );//novo objeto
+		 
+		 
+		a.comer(b);//execuntado metodo do objeto a , com paramento b
+		System.out.println(a.peso);//mostrando na tela 
+		a.comer(c);//execuntado metodo do objeto a , com paramento c
+		 
+		 System.out.println(a.peso);//mostrando na tela 
+	}
+}
+

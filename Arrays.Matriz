@@ -1,0 +1,45 @@
+package arrays;
+
+import java.util.Arrays;// biblioteca
+import java.util.Scanner;//biblioteca
+
+public class Matriz {// objeto
+
+	public static void main(String[] args){// inicio 
+
+		Scanner entrada = new Scanner(System.in);//função get (objeto)
+
+		System.out.print("quantos alunos? ");//mostrando na tela
+		int qtdeAluno= entrada.nextInt();// declarando variável + atribuindo a  função get 
+
+		System.out.print("quantos alunos? ");//mostrando na tela
+		int qtdeNotas= entrada.nextInt();// declarando variável + atribuindo a função get 
+
+		double[][] notasDaTurma = new double[qtdeAluno][qtdeNotas];// Matriz ( 2 arrays)  + [matriz externo] + [matriz interno] 
+		double total= 0;//declarando variável + atribuindo valor 
+
+		// for dentro de outro for
+		for(int a=0; a<notasDaTurma.length; a++ ){// função for , vai percorrer o  primeiro array
+		for(int n =0;n< notasDaTurma[a].length; n++){//função for , vai percorrer o  segundo  array
+		System.out.printf("informe a nota %d do aluno %d: ",n + 1 ,a +1);//mostrando na tela
+		notasDaTurma[a][n] = entrada.nextDouble();// a cada vez que o FOR for  executado ele vai pedir para digitar uma nota 
+		total+= notasDaTurma[a][n];// atribuindo soma 
+		}
+		}
+		double media = total/ (qtdeAluno * qtdeNotas);//declarando variável 
+		System.out.println("Media da turma é" + media);//mostrando na tela a media
+
+		for(double[] notasDoAluno: notasDaTurma){//função foreach , onde ele percorre o array todo
+		System.out.println(Arrays.toString(notasDoAluno));//mostrando na tela  notasDaTurma
+
+
+		}
+
+
+		entrada.close();//fechando objeto scanner
+
+
+		}
+
+}
+

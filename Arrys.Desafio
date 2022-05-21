@@ -1,0 +1,38 @@
+package arrays;
+
+import java.util.Scanner;//biblioteca
+
+public class Desafio {//objeto
+
+	
+	public static void main(String[] args) {//main
+		
+		Scanner entrada= new Scanner(System.in);// novo objeto 
+		System.out.println("Quantas notas você deseja informa: ");//mostrando na tela 
+		int p1 = entrada.nextInt();//salvando valor em um variável
+		
+		double[] p = new double[p1];// array 
+		for(int i=0;i<p1;i++) {//função for 
+			System.out.printf("Digite a nota %d: ",i+1);//mostrando na tela
+		double cont	= entrada.nextDouble();//salvando valor em um variável
+			p[i]=cont;//add no arrqy 
+			
+		}
+			double totalNotas= 0 ;//declaração de variável
+		for (double ps : p) {//função for 
+			totalNotas+=ps;//atribuindo valor 
+			
+			
+		}
+		double media = totalNotas/p1;//calculando media
+		
+		System.out.printf("São %d notas, A media é: %.2f", p1,media);//mostrando na tela
+		System.out.println();//mostrando na tela 
+		System.out.println("Fim");//mostrando na tela 
+		
+		
+		
+		entrada.close();//fechando scanner
+	}
+}
+

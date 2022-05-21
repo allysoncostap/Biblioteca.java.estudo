@@ -1,0 +1,44 @@
+package classe;
+
+public class ValorVsReferencia {//objeto 
+public static void main(String[] args) {//iniciando 
+	double a = 2 ;//declarando variável 
+	double b = a ; // atribuição por valor (Tipo primitivo)// 
+	
+	
+	
+	a++;// acrescentando 
+	b--;//retirando 
+	System.out.println(a+ ""+ b);//mostrando na tela 
+	Data d1 = new Data(1, 6, 2022);//criando objeto + parâmetros 
+	Data d2 = d1; // atribuição por referencia (Objeto)//
+	
+	d1.mes =31;//atribuindo valor 
+	d2.mes = 12;//atribuindo valor 
+	d1.ano = 2025;//atribuindo valor 
+	System.out.println(d1.obterDataFormatada());//mostrando na tela + métodos 
+	System.out.println(d2.obterDataFormatada());//mostrando na tela + métodos 
+
+voltarDataParaValorPadrao(d1);//método com parâmetros 
+
+System.out.println(d1.obterDataFormatada());//mostrando na tela + método
+System.out.println(d2.obterDataFormatada());//mostrando na tela + métodos 
+
+int c = 5 ;//declaração de variável 
+alterarPrimitivo(c);//método com parâmetros 
+System.out.println(c);// mostrando na tela 
+}
+	static void  voltarDataParaValorPadrao(Data d) {//
+		d.dia = 1;//
+		d.mes = 1;//
+		d.ano = 1970;//
+	}
+
+static void alterarPrimitivo(int a) {//
+	a++;//
+	
+	
+}
+
+}
+

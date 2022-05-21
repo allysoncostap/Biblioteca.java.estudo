@@ -1,0 +1,21 @@
+package arrays;
+
+public class Foreach {
+	public static void main( String[] args ){//iniciando programa
+
+		double[] notas  = {9.9, 8.7, 7.2, 9.4};//array + parâmetros 
+
+		for(int i = 0; i<notas.length; i ++){// for 
+		System.out.println(notas[i]+ " ");//mostrando na tela 
+		}
+
+
+		for (double nota : notas){// foreach 
+
+		System.out.println(nota);//mostrando na tela
+
+		}
+
+		}
+}
+

@@ -1,0 +1,32 @@
+package classe;
+
+public class Pessoa {//objeto
+
+	String nome;//declarando variável 
+	double peso;//declarando variável 
+	
+	Pessoa(){// construtor padrão
+		
+		
+	}
+	
+	Pessoa(String nome, double peso){// construtor com parâmetros 
+		this.nome = nome;//indicando variável 
+		this.peso = peso;//indicando variável 
+		
+		
+		
+	};
+	
+
+	void comer(Comida comida) {// método void (não retorna nada )
+		 this.peso += comida.peso;// calculo 
+		
+		
+	}
+	
+
+	
+	
+}
+

@@ -1,0 +1,21 @@
+package classe;
+
+public class AreaCirc {//objeto 
+	double raio;//declarando variável 
+	final static double PI = 3.1415;// declarando variável constante + static ( somente da class) 
+	AreaCirc(double raioIinicial){//método + parâmetros 
+	 raio = raioIinicial;//atribuindo valor 
+	 }
+
+	double area(){//método 
+	 
+	 return PI * Math.pow(raio, 2 );// retornar + método de potenciação
+
+	 }
+
+	static double area(double raio){//método da class (static)
+	 return PI * Math.pow(raio,2);// retornar + método de potenciação
+	 }
+
+}
+

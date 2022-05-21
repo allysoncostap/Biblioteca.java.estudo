@@ -1,0 +1,31 @@
+package classe;
+
+public class Data {//objeto 
+	int dia;//declarando variável 
+	int mes;//declarando variável
+	int ano;//declarando variável
+String obterDataFormatada() {//método tipo string 
+	
+	return String.format("%d/%d/%d\n",dia,mes,ano);// retornando método  com parâmetro
+	
+	
+}
+void imprimirDataFormatada() {//método void que não retorna nada 
+	
+	System.out.print(obterDataFormatada());//mostrando tela 
+	
+}
+Data(int diaInicial, int  mesInicial ,  int anoInicial ){//construtor com parâmetros 
+	 dia = diaInicial;
+	 mes = mesInicial;
+	 ano = anoInicial;
+	
+}
+Data(){//construtor padrão, quando iniciar o construtor as variável já vão com os valores abaixo
+dia=1;// 
+mes=1;//
+ano = 1970;//
+}
+
+}
+
