@@ -1,0 +1,22 @@
+package controle;
+
+public class Break {//objeto 
+	
+	public static void main(String[] args) {//iniciando programa
+		
+		for(int i = 0;i<10;i++) {//FOR ( ; boolean ; ) ( repetição)
+			if(i==5) {//IF (boolean) afirmação verdadeira executa o bloco de código 
+				
+				break;// break interromper o Código 
+			}
+			
+		}
+		
+		
+		
+		
+	}
+	
+	
+}
+

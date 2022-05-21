@@ -1,0 +1,18 @@
+package controle;
+
+import java.util.Scanner;// biblioteca 
+
+public class WhileIndeterminado {//objeto
+
+	public static void main(String[] args) {//iniciando programa
+		Scanner entrada = new Scanner(System.in);//criando objeto tipo scanner 
+		String valor ="";//atribuindo valor 
+		while(!valor.equals("sair")) {///while(repetição) quando for true pare 
+			System.out.print("Voce diz: ");//mostrando na tela 
+			valor= entrada.nextLine();//atribuindo recebido do get 
+		}
+	entrada.close();//fechando scanner
+	}
+	
+}
+

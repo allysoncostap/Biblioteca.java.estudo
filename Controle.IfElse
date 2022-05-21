@@ -1,0 +1,19 @@
+package controle;
+
+import javax.swing.JOptionPane;// biblioteca do botão 
+
+public class IfElse {//objeto
+	public static void main(String[] args) {//iniciando programa 
+		String valor = JOptionPane.showInputDialog("Informe o numero: ");//declarando variável + função de botão + função de mostrar tela 
+		// + get (scanner)
+		 int numero = Integer.parseInt(valor);//atribuindo valor recebido do get+ passando o valor para inteiro  
+		 if(numero % 2 == 0) {//if ( boolean) quando for true dá o play
+			 System.out.println("Numero par!");//mostrando na tela
+			 
+		 }else {//senão
+			 System.out.println("Numero impar");//mostrando na tela
+			 
+		 }
+	}
+}
+

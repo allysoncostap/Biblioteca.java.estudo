@@ -1,0 +1,39 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioDiaSemana {// // class
+	public static void main(String[] args) {//
+	Scanner entrada = new Scanner(System.in);//
+	String s1 = "";// declarando String vazia para passar no while 
+	
+	
+	while(!s1.contentEquals("exit")) {// função while 
+		System.out.print("Digite o dia da semana: ");//mostrando na tela 
+		s1 = entrada.nextLine();//recebendo valor do objeto 
+	 
+		
+	if(s1.equalsIgnoreCase("domingo")) {//função if 
+		System.out.println("1");//mostrando na tela 
+		
+	} else if (s1.equalsIgnoreCase("segunda")) {// função else if 
+		System.out.println("2");//mostrando na tela 
+	}else if (s1.equalsIgnoreCase("terça")) {//função else if 
+		System.out.println("3");//mostrando na tela 
+		}else if (s1.equalsIgnoreCase("quarta")) {//função else if 
+			System.out.println("4");//mostrando na tela 
+		}else if (s1.equalsIgnoreCase("quinta")) {//função else if 
+			System.out.println("5");//mostrando na tela
+		}else if (s1.equalsIgnoreCase("sexta")) {//função else if 
+			System.out.println("6");//mostrando na tela 
+		}else if(s1.equalsIgnoreCase("sabado")) {//função else if 
+			System.out.println("7");//mostrando na tela 
+		} else {// else para voltar algum erro se colocar algo errado 
+			System.out.println("tente novamente!");//mostrando na tela
+			
+		}
+	}
+	entrada.close(); //fechando scanner
+}
+}
+

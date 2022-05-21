@@ -1,0 +1,12 @@
+package controle;
+
+public class For2 {//objeto
+	
+	public static void main(String[] args) {//iniciando programa 
+		for(int contador = 10;contador>=0;contador -=2) {//for( 10 ; >=0 ; -= 2) repetição 
+			System.out.printf("Contador = %d\n",contador);//mostrando na tela 
+			
+		}
+	}
+}
+

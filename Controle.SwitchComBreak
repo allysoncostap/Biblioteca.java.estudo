@@ -1,0 +1,46 @@
+package controle;
+
+import java.util.Scanner;// biblioteca 
+
+public class SwitchComBreak {//objeto
+
+	public static void main(String[] args) {//iniciando programa 
+
+		Scanner entrada = new Scanner(System.in);//criando objeto do tipo scanner (get)
+		String conceito = "";//declarando variavel 
+		System.out.println("Informe a nota: ");//mostrando na tela 
+		int nota = entrada.nextInt();//atribuindo valor recebido do get 
+
+		switch (nota) {//switch ( int) escolha por caso por inteiro 
+		case 10://caso do switch
+		case 9://caso do switch
+			conceito = "A";//atribuindo valor 
+			break;//interrompendo switch
+		case 8://caso do switch
+		case 7://caso do switch
+			conceito = "B";//atribuindo valor 
+			break;//interrompendo switch
+		case 6://caso do switch
+		case 5://caso do switch
+			conceito = "C";//atribuindo valor 
+			break;//interrompendo switch
+		case 4://caso do switch
+		case 3://caso do switch
+			conceito = "D";//atribuindo valor 
+			break;//interrompendo switch
+		case 2:  case 1://caso do switch
+			conceito = "E";//atribuindo valor 
+		break;//interrompendo switch
+	default:// quand for nenhum caso 
+		conceito = "não encontrado!";//atribuindo valor 
+		}
+
+		System.out.println("Conceito é "+ conceito);//mostrar na tela 
+		
+		entrada.close();//fechando scanner
+		
+		
+	}
+
+}
+

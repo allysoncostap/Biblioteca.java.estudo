@@ -1,0 +1,32 @@
+package controle;
+
+import java.util.Scanner;//biblioteca 
+
+public class If {
+	public static void main(String[] args) {// início do programa
+
+	Scanner entrada = new Scanner(System.in);//criando objeto do tido scanner (get)
+	System.out.println("informe media ");//mostrando na tela 
+	double media= entrada.nextDouble();//atribuindo valor recebido do get (scanner)
+	 if (media <=10&&media >=7.0) {//if (boolean) quando for true da o play
+		 System.out.println("aprovado!");//mostrando na tela
+		 System.out.println("Parabens!!");//mostrando na tela
+		 
+	 }
+	 if(media < 7 && media >=4.5) {//if( boolean ) quando for true dá o play
+		 
+		 System.out.println("recupeção ");//mostrando na tela
+	 }
+	
+	 boolean criteiroReprovacaoAtingindo = media <4.5 && media >=0;//declarando variável boolean + condição 
+	 if(criteiroReprovacaoAtingindo) {//if(boolean)  quando for true dá o play
+		 
+		 System.out.println("Reprovado");//mostrando na tela
+	 }
+	
+	
+	
+	entrada.close();// fechando scanner
+	}
+}
+

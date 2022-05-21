@@ -1,0 +1,45 @@
+package controle;
+
+import java.util.Scanner;//biblioteca
+
+public class Desafiowhile {//objeto
+	public static void main(String[] args) {//iniciando
+		Scanner entrada = new Scanner(System.in);// // novo objeto
+		double nota = 0 ;//declarando valor na variável
+		double notaTotal =0;//declarando valor na variável
+		 int contador = 0;//declarando valor na variável
+		 double media =0; //declarando valor na variável
+			
+		while(nota != -1) {//
+			System.out.println("digite a nota: ");//mostrando na tela 
+			nota = entrada.nextDouble();//salvando valor recebido em uma variável 
+			
+			if(nota>=0 && nota <= 10) {//função if 
+				System.out.printf("Nota válida ! Foi adicionada com sucesso: %f\n",nota);//mostrando na tela 
+				 notaTotal += nota ;// variável  de auto soma(atribuição) 
+				contador++;// contador 
+				media= notaTotal/contador;// calculando media
+				
+			}else {//função else
+				
+				System.out.println("Nota digitada invalida: ");//mostrando na tela 
+				
+			}			
+			
+			
+		}
+			
+		System.out.printf("Total de notas validas: %.2f , media do total de notas: %.2f ", notaTotal,media );//mostrando na tela 
+			
+			entrada.close();//fechando 
+		}
+}
+
+		
+		
+		
+		
+	
+
+:wq
+

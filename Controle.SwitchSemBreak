@@ -1,0 +1,55 @@
+package controle;
+
+public class SwitchSemBreak {//objeto
+public static void main(String[] args) {//iniciando programa
+	
+	// if (boolean)
+	//while(boolean)
+	//for(;boolean;)
+	
+	String faixa= "preta";//atribuindo valor 
+	
+	switch(faixa.toLowerCase()) {//switch + letra minúsculas 
+	case "preta"://caso(opção) do switch
+		System.out.println("Sei o bassai-Dai");//mostrando na tela 
+	case "marron"://caso(opção) do switch
+		System.out.println("Sei o tekki Shodan");//mostrando na tela 
+	case "roxa"://caso(opção) do switch
+		System.out.println("Sei o Heian Godan");//mostrando na tela 
+	case "verde"://caso(opção) do switch
+		System.out.println("Sei o Heian Yodan");//mostrando na tela 
+	case "laranja"://caso(opção) do switch
+		System.out.println("Sei o heian Sandan");//mostrando na tela 
+	case "vermelha"://caso(opção) do switch
+		System.out.println("Sei o heian Nidan");//mostrando na tela 
+	case "amarela"://caso(opção) do switch
+		System.out.println("Sei o heian Shodan");//mostrando na tela 
+		break;//interrompendo o switch
+		default://caso(opção) que não encontro no switch
+			System.out.println("Nao sei de Nada");//mostrando na tela 
+		
+	
+	}
+	System.out.println("Fim");//mostrando na tela 
+	
+	
+	int idade = 3;//
+	
+	switch (idade) {//switch inteiro 
+	
+	case 3 ://caso(opção) do switch
+		System.out.println("Sabe programar");///mostrando na tela 
+	case 2 ://caso(opção) do switch
+		System.out.println("Nao sabe falar");///mostrando na tela 
+	case 1 ://caso(opção) do switch
+		System.out.println("Sabe andar");///mostrando na tela 
+	case 0 ://caso(opção) do switch
+		System.out.println("Sabe respirar");///mostrando na tela 
+	
+	}
+	
+	
+	
+}
+}
+

@@ -1,0 +1,23 @@
+package controle;
+
+import java.util.Scanner;// biblioteca 
+
+// if(..) sentenca; ou {}
+//while(....) sentenca; ou {}
+//for(...;...;...)sentenca; ou {}
+//do {} while(..);
+public class DoWhile {//objeto
+	public static void main(String[] args) {//iniciando programa
+		Scanner entrada = new Scanner(System.in);//criando objeto tipo scanner (get)
+		String texto = "por favor";// declarando variável
+		do {// DO {sempre vai uma vez} 
+			System.out.println("Voce precisa falar as palavra magicas");//mostrando na tela
+			texto = entrada.nextLine();//atribuindo valor recebido do get 
+		} while (!texto.equalsIgnoreCase("por favor"));//while(repetição) quando for true pare 
+
+		System.out.println("obrigado!");//mostrando na tela
+		entrada.close();//fechando objeto 
+	}
+
+}
+

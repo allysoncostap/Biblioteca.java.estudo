@@ -1,0 +1,13 @@
+package controle;
+
+public class WhileDeterminado {//objeto 
+public static void main(String[] args) {//iniciando 
+	
+	int contador = 0;//declarando variável 
+	while(contador <= 20) {///while(repetição) quando for true pare 
+		System.out.printf("i =%d\n",contador);//mostrando na tela 
+		contador +=2;//atribuição 
+	}
+}
+}
+

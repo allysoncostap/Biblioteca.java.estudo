@@ -1,0 +1,31 @@
+package controle;
+
+import java.util.Scanner;// biblioteca do scanner
+
+public class IfElseIf {// objeto 
+	public static void main(String[] args ){//iniciando programa
+	// sempre vai precisar de um  if 
+		Scanner entrada = new Scanner(System.in);//criando um objeto do tipo scanner
+	System.out.print("Digite a nota: ");//mostrando na tela 	//
+	double nota = entrada.nextDouble();//atribuindo valor recebido do get 
+	
+	if (nota > 10 || nota <0) {//if (boolean ) true play
+		System.out.println("Nota invalida!");//mostrando na tela 
+	}else if (nota>=8.1) {//else if ( opção == boolean) quando for true play
+		System.out.println("Conceito A");//mostrando na tela 
+		
+	}else if (nota>=6.1) {//else if ( opção == boolean) quando for true play
+		System.out.println("Conceito B");//mostrando na tela 
+	}else if (nota>=4.1) {//else if ( opção == boolean) quando for true play
+		System.out.println("Conceito C");//mostrando na tela 
+	}else if (nota>=2.1) {//else if ( opção == boolean) quando for true play
+		System.out.println("Conceito D");//mostrando na tela 
+	}else {//else ( boolean) quando for false da o play
+		System.out.println("Conceito E");//mostrando na tela 
+		
+	}
+	System.out.println("Fim");//mostrando na tela 
+	entrada.close();//fechando scanner
+	
+}}
+
