@@ -1,0 +1,27 @@
+package oo.composicao;
+
+import java.util.ArrayList;
+
+public class Compra {
+	String cliente;//declarando variáveis
+	ArrayList<Item> itens = new ArrayList<Item>();// criando lista homogenia  
+	//essa lista so recebe o tipo "item"
+
+	void adicionarItem(String nome, int quantidade , double preco){// criando metodo  de adiconar com atributos
+	this.adicionarItem(new Item(nome, quantidade, preco));// usando o método abaixo
+	}
+	void adicionarItem(Item item){//criando o método de adicionar
+	this.itens.add(item);// adicionado	
+	item.compra = this;//atribuindo referência do objeto atual a compra
+	}
+
+	double obterValorTotal(){// criando método para saber o valor total
+	double total=0;// declarando variável
+	for (Item item: itens){//foreach para percorre toda a lista
+	total += item.quantidade *item.preco;//formula para saber o total
+	}
+	return total;//retorna
+
+}
+}
+

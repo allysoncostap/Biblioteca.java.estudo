@@ -1,0 +1,16 @@
+package oo.composicao;
+
+public class Item {
+	String nome;// declarando variáveis
+	int quantidade;//declarando variáveis
+	double preco;//declarando variáveis
+    Compra compra ;// item tem 'um'a compra 
+	Item(String nome, int quantidade, double preco){// criando o construtor
+	this.nome = nome ;// atribuindo os valores
+	this.quantidade = quantidade;//atribuindo os valores
+	this.preco = preco;//atribuindo os valores
+	}
+
+
+}
+

@@ -1,0 +1,20 @@
+package oo.composicao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Curso {
+	final String nome;// declarando constante
+	final List<Aluno> alunos = new ArrayList<>();//// lista constante 
+	
+
+	Curso(String nome) {// construtor do nome
+		this.nome = nome;//// declarando atributo
+	}
+
+	void adicionarAluno(Aluno aluno) {// método adicionarAluno
+		this.alunos.add(aluno);// método add
+		aluno.cursos.add(this);// objeto atual
+	}
+}
+

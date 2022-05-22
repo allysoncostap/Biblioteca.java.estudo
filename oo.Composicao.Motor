@@ -1,0 +1,22 @@
+package oo.composicao;
+
+public class Motor {
+Carro carro;//motor tem um carro
+Motor(Carro carro){//construtor do motor com parâmetro
+	this.carro = carro;// indicando variável
+	
+	
+}
+	boolean ligado = false;//atribuindo valor de atributo
+	double fatorInjecao = 1 ;//atribuindo valor de atributo
+	int giros(){//criando método giros
+	if(!ligado){//função if, para saber qual valor do giros
+	return 0;//se estiver desligado é 0
+	}else{//funcção Else
+	return (int) Math.round(fatorInjecao * 3000);// retornado valor se o carro estiver ligado
+	}
+
+
+	}
+}
+

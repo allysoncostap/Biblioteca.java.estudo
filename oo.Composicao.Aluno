@@ -1,0 +1,35 @@
+package oo.composicao;
+
+import java.util.ArrayList;///
+import java.util.List;
+
+public class Aluno {//objeto
+
+	final String nome;// variável constante
+	final List<Curso> cursos = new ArrayList<>();// lista constante
+
+	Aluno(String nome) {// construtor nome
+		this.nome = nome;// declarando atributo
+	}
+
+	void adicionarCurso(Curso curso) {// criando método adicionarCurso
+		this.cursos.add(curso);// adicionando na lista
+		curso.alunos.add(this);// adicionando na lista
+	}
+
+	Curso obterCursoPorNome(String nome) {//
+		for (Curso curso : this.cursos) {// foreach percorre a lista toda
+			if (curso.nome.equalsIgnoreCase(nome)) {// função if para saber se é igual
+				return curso;//
+			}
+		}
+		return null;//
+
+	}
+
+	public String toString() {// método para transforma objeto em string
+		return nome;// return o valor
+
+	}
+}
+

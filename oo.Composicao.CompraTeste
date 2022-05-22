@@ -1,0 +1,22 @@
+package oo.composicao;
+
+public class CompraTeste {
+	public static void main(String[] args) {
+		
+	
+	Compra compra1 = new Compra();//criando objeto
+	compra1.cliente = "João Pedro";// atribuindo valor ao objeto
+	compra1.adicionarItem("Caneta", 20 , 7.45);//método para
+	compra1.adicionarItem( new Item("Borracha", 12 , 3.80));//método para adicionar Item
+	compra1.adicionarItem( new Item("Caderno", 3, 18.79));//método para adicionar Item
+
+
+	System.out.println(compra1.itens.size());//método para saber o tamanho da lista (quantidade)
+	System.out.println(compra1.obterValorTotal());//método para saber o valor total
+	// da compra
+
+
+	}
+
+}
+

@@ -1,0 +1,36 @@
+package oo.composicao;
+
+public class Carro {
+	final Motor motor;// declaração de um motor = null
+	Carro (){//criando o construtor
+
+	this.motor = new Motor(this);//o próprio objeto é o parâmetro de motor
+	}
+	void acelerar(){// Criando função acelerar
+	if(motor.fatorInjecao< 2.6){//função if , função de defesa
+	motor.fatorInjecao += 0.4;//atribuindo valor de atributo
+	}
+
+	}
+	void frear(){//Criando função acelerar
+	if(motor.fatorInjecao>0.5){//função if ,função de defesa
+	motor.fatorInjecao-=0.4;//atribuindo valor de atributo
+	}
+
+	}
+	void ligar(){//Criando função acelerar
+	motor.ligado= true;//atribuindo valor de atributo
+
+
+	}
+	void desligar(){//Criando função acelerar
+	motor.ligado = false;// declarando valor do atributo
+
+
+	}
+	boolean estaLigado(){//Criando função acelerar
+
+	return motor.ligado;//atribuindo valor de atributo
+
+}}
+
