@@ -1,0 +1,30 @@
+package oo.herança;
+
+public class Carro {//classe
+	
+	
+	  int velocidadeAtual = 0 ;//atribuindo valor na variável 
+	   
+	  void acelerar() {//metodo acelerar
+		  
+		   velocidadeAtual += 5;// atribuindo valor na variável 
+		   
+		   
+		   
+	   }
+	  
+	  void freiar() {//método acelerar
+		  
+		   
+		  velocidadeAtual -= 5;//
+		   
+		   
+	   }
+	   Carro (){}// construtor padrão
+	public Carro(int velocidadeAtual) {//construtor com parâmetros 
+		
+		this.velocidadeAtual = velocidadeAtual;//atribuindo valor para variável 
+	}
+	
+}
+

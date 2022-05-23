@@ -1,0 +1,43 @@
+package oo.desafio;
+
+import java.util.ArrayList;
+
+public class Compra {// objeto 
+ArrayList <Item> itens= new ArrayList<>();// Lista , recebendo class de parâmetros 
+
+
+void adicionarItens(Produto produto , int qnt) {//método add itens 
+	this.itens.add(new Item(produto,qnt));//
+	
+}
+
+	
+	
+
+
+
+double obtervalor() {//método obtervalor
+	double total = 0;
+	for(Item item:itens) {
+		total+= item.qnt * item.produto.preco;
+	
+	}
+	
+	return  total;
+}
+
+public String toString() {//método para converter class em string 
+	
+	return " Nome do Produto: "
+			+ itens.get(0).produto.getNome() 
+			+ " Preço: "
+			+ itens.get(0).produto.getPreco()
+			+ " Quantidade: "
+			+ itens.get(0).qnt ;
+			
+	
+	
+}
+
+}
+

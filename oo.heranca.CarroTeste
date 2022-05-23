@@ -1,0 +1,29 @@
+package oo.herança;
+
+public class CarroTeste { //classe
+public static void main(String[] args) {// iniciando
+	
+
+	Ferrari c1 = new Ferrari();//novo objeto 
+	c1.velocidadeAtual= 0 ;//atribuindo valor 
+	c1.acelerarFerrari();//executando método
+	c1.acelerar();//executando método
+	c1.freiar();//executando método
+	 
+	Civic cv1 = new Civic();//novo objeto 
+	cv1.velocidadeAtual= 2;//atribuindo valor
+	cv1.acelerar();//executando método
+	cv1.acelerar();//executando método
+	cv1.acelerar();//executando método
+	
+  Ferrari fe = new Ferrari();//novo objeto
+  fe.velocidadeAtual =100; //atribuindo valor
+  fe.acelerar();//executando método
+
+System.out.println(c1.velocidadeAtual);//imprimindo na tela
+System.out.println(cv1.velocidadeAtual);//imprimindo na tela
+System.out.println(fe.velocidadeAtual);//imprimindo na tela
+	
+}	
+}
+

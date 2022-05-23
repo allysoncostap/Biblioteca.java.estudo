@@ -1,0 +1,15 @@
+package oo.herança;
+
+public class Ferrari extends Carro {
+	//classe ferra recebe classe Carro de herança
+	
+	void acelerarFerrari() {// metodo acelara ferrari
+		  
+		   velocidadeAtual += 15;//
+		   
+		   
+		   
+	   }
+	
+
+}

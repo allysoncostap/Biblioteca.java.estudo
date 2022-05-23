@@ -1,0 +1,29 @@
+package oo.desafio;
+
+public class ClienteTeste {
+
+	public static void main(String[] args) {
+		
+			Produto p1 =new Produto(); // novo produto 
+			p1.nome= "";
+			p1.preco = 100;
+		
+			
+			Produto p2 = new Produto();// novo produto 
+			p2.nome = "Uma Nova Coluna";
+			p2.preco = 500 ;
+			
+			Compra c1 = new Compra();// nova compra
+			c1.adicionarItens(p1, 1);
+			
+			Compra c2 = new Compra();// nova compra
+			c2.adicionarItens(p2, 2);
+			
+			Cliente cl1= new Cliente();// novo cliente 
+			cl1.nome= "Allyson";
+			cl1.adicinarCompra(c2);
+			//cl1.adicionarCompra(c1);
+
+			System.out.println(cl1);
+	}}
+

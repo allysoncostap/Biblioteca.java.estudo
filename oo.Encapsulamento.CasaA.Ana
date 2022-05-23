@@ -1,0 +1,11 @@
+package oo.encapsulamento.casaA;
+
+public class Ana {
+
+	@SuppressWarnings("unused")
+	private String secredo ="...";/// privete só a classe pode utilizar 
+	String facoDenroDeCasa = "...."; //default/pacote  só quem está no mesmo pacote para utlizar
+	protected String formaDeFalar =".....";// protected só utiliza a variável  quem herda  e  não precisa estanciar 
+	public String todosSabem = "...";//todos podem utilizar 
+}
+

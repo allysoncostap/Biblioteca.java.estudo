@@ -1,0 +1,43 @@
+package oo.encapsulamento.casaA;
+
+public class Paulo {
+	
+	
+	Ana esposa = new Ana(); 
+
+
+
+void testeAcesso() {
+	// segredo private  PRIVADO(PRIVATE)
+	// facoDentroDeCasa   PACOTE (defaut / padrao)
+	// formaDeFalar       HERANÇA ((protected)
+	// todosSabem          PUBLICO  (public)
+	
+	
+	Ana esposa = new Ana();
+	
+	//System.out.println(esposa.segredo);// NÃO CONSEGUE IMPRIMIR
+	//NA TELA PQ É UMA VARIVEL PRIVADO 
+	
+	System.out.println(esposa.facoDenroDeCasa);//NÃO CONSEGUE IMPRIMIR
+	//NA TELA PQ  NIVEL DE ACESSO PACOTE/ DEFAULT 
+		
+	
+	//System.out.println(sogra.formaDeFalar);NÃO CONSEGUE IMPRIMIR
+	//NA TELA PQ NÃO HERDA  DA CLASSE ANA 
+	System.out.println(esposa.todosSabem);
+	
+	
+	
+	
+	
+
+
+
+}
+}
+
+
+
+
+

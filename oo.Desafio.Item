@@ -1,0 +1,30 @@
+package oo.desafio;
+
+public class Item {//class
+
+int qnt;// declarando variável
+ Produto produto;// item tem um produto, ligação de composição de um 
+ 
+        Item(){}// construtor padrão de item
+   		Item(Produto produto, int qnt) {// construtor de item
+			this.produto= produto;
+			this.qnt= qnt;
+			
+		}
+		public int getQnt() {//função get 
+			return qnt;
+		}
+		public void setQnt(int qnt) { //função set 
+			this.qnt = qnt;
+		}
+		public Produto getProduto() {//função get 
+			return produto;
+		}
+		public void setProduto(Produto produto) {//função set 
+			this.produto = produto;
+		}
+	 
+		
+	 }
+	
+

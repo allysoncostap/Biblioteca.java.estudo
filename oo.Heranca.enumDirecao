@@ -1,0 +1,6 @@
+package oo.herança;
+
+public enum Direcao {// Enum , são compotamento padroes , dias da semanada , padroes !
+NORTE, LESTE, SUL,OESTE;// 
+}
+

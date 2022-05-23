@@ -1,0 +1,33 @@
+package oo.desafio;
+
+public class Produto {//
+
+	double preco;//declaração de variável
+	String nome;//declaração de variável
+	
+	Produto(){};//construtor padrão
+	Produto(String nome, double preco){//construtor com parâmetros 
+		
+		this.nome = nome;//
+		this.preco = preco;//
+		
+		
+	}
+	public double getPreco() {//método get
+		return preco;
+	}
+	public void setPreco(double preco) {// método set
+		this.preco = preco;
+	}
+	public String getNome() {//método get
+		return nome;
+	}
+	public void setNome(String nome) {//método set
+		this.nome = nome;
+	}
+	
+	
+
+
+}
+

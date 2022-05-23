@@ -1,0 +1,33 @@
+package oo.herança;
+
+public class Jogo {// class	
+public static void main(String[] args) {// inicio
+
+	Monstro j1 = new Monstro();//novo objeto 
+	j1.x= 10;//atribuindo valor ao atributo
+	j1.y=10 ;//atribuindo valor ao atributo
+	Heroi j2 = new Heroi();//novo objeto
+	j2.x= 10;//atribuindo valor ao atributo
+	j2.y=10 ;//atribuindo valor ao atributo
+	
+	//j1.andar(Direcao.NORTE);// método andar 
+	//j1.andar(Direcao.OESTE);//método andar 
+	//j1.andar(Direcao.NORTE);//método andar 
+	//j1.andar(Direcao.LESTE);//método andar 
+
+	
+	
+	
+	j1.atarcar(j2);//método atacar 
+	j2.atarcar(j1);//método atacar
+	
+	
+	
+	System.out.println(j1.vida);//imprimindo na tela 
+	System.out.println(j2.vida);//imprimindo na tela 
+	
+}
+	
+	
+}
+

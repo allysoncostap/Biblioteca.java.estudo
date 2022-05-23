@@ -1,0 +1,9 @@
+package oo.herança;
+
+public class Civic extends Carro {
+
+	//classe Civic recebe classe carro de herança
+	
+	
+}
+

@@ -1,0 +1,6 @@
+package oo.herança;
+
+public class Heroi extends Jogador { 
+//classe heroi recebe  classe de jogador de herança
+}
+

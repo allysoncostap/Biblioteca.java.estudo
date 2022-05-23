@@ -1,0 +1,40 @@
+package oo.herança;
+
+public class Jogador {
+	int vida = 100;//declarando variável 
+	int x;//declarando variável
+	int y;//declarando variável
+
+	boolean atarcar(Jogador opodente) {// método atacar
+		int deltaX = Math.abs(x - opodente.x);// valor absoluto arredonda 
+		int deltaY = Math.abs(y - opodente.x);//
+
+		if (deltaX == 0 && deltaY == 1) {// IF
+			opodente.vida -= 10;//
+			return true;//
+		} else if (deltaX == 1 && deltaY == 0) {// else if 
+			opodente.vida -= 10;//
+			return true;//
+		} else {//else
+			return false;//
+		}
+	}
+
+	boolean andar(Direcao direcao) {// método andar , recebendo as direções de enum
+		switch (direcao) {//switch da direção 
+		case NORTE://
+			y--;//
+			break;//
+		case LESTE://
+			x++;//
+		case SUL://
+			y++;//
+		case OESTE://
+			break;//
+		}
+		return true;//
+
+	}
+
+}
+

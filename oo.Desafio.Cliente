@@ -1,0 +1,54 @@
+package oo.desafio;
+
+
+import java.util.ArrayList;
+
+public class Cliente {// objeto 
+String nome;
+ ArrayList<Compra> compras = new ArrayList<>();// lista recebendo objeto de parâmetro 
+ 
+ Cliente(){}// construtor padrão
+ Cliente (String nome){//construtor com parâmetros 
+	 this.nome= nome;
+	 
+	 
+ }
+ void adicinarCompra(Compra compra) {// método adicionar compra na lista 
+	 this.compras.add(compra);
+	 
+	 
+ }
+ 
+ double obterValorTotal() {// método obtervalor 
+	 
+	 double total = 0;
+	 for(Compra compra:compras) {
+		 total+=compra.obtervalor();
+		 
+		 
+		 
+	 }return total;
+ }
+ @Override
+ public String toString() {// método ...
+	 
+	 return " Nome do Cliente: "
+	 + this.nome
+	 + "\n"
+	 + this.compras;
+
+			
+	 
+ }
+	 
+         
+
+	 }
+
+
+ 
+ 
+ 
+ 
+
+

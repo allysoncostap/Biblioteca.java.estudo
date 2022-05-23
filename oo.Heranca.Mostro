@@ -1,0 +1,9 @@
+package oo.herança;
+
+public class Monstro extends Jogador {
+	
+	// Classe monstro recebe classe jogar de herança
+	
+
+
+}
